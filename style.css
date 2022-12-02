@@ -1,159 +1,291 @@
-.head {
-  width: 100%;
-  height: 50px;
-  background-color: #ff9a4b;
-  margin-bottom: 50px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.main {
-  width: 960px;
+header, nav, h2, .main-visual, footer {
+  font-family: Chalkduster, "Bradley Hand", Courier, "Segoe Print", sans-serif;
+}
+
+header {
+  width: 90%;
+  padding: 15px 0;
   margin: 0 auto;
+  text-align: center;
+}
+.social {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+}
+
+.social i {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+header .heading {
+  font-size: 32px;
+}
+
+.nav-list {
+  text-align: center;
+  padding : 10px 0;
+  margin: 0 auto;
+}
+
+.nav-list-item {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.main-visual {
+  width: 100%;
+  height: 300px;
+  background-image: url(img/mv.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.main-visual-content {
+  width: 40%;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding-top: 105px;
+}
+
+.main-visual-text {
+  color: #fff;
+}
+
+.main-visual-name {
+  margin-top :30px;
+  color: #fff;
+}
+
+main {
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 70px 0;
+}
+
+.blog {
+  width: 540px;
+  margin-right: 30px;
+}
+
+.blog-heading {
+  border-bottom: 8px solid #f7f7f7;
+  text-align: center;
+  line-height: 0.6;
+}
+
+.blog-box {
+  padding-top: 50px;
+}
+
+.blog-item {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #f7f7f7;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.blog-image {
+  height: 180px;
+}
+
+.blog-text {
+  padding-top: 25px;
+  padding-left: 30px;
+}
+
+.blog-text-heading {
+  padding-bottom: 15px;
+}
+
+.blog-date {
+  font-size: 12px;
+  display: inline-block;
+}
+
+.category {
+  display: inline-block;
+  padding: 5px 8px;
+  background-color: #acabab;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 11px;
+}
+
+.pagination {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.pagination p {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  color: #fff;
+  background-color: #acabab;
+  border-radius: 3px;
+  line-height: 30px;
+}
+
+.sidebar {
+  width: 230px;
+}
+
+.common-heading {
+  border-bottom: 8px solid #f7f7f7;
+  text-align: center;
+  line-height: 0.6;
+}
+
+.sidebar-contents {
+  padding: 50px 0;
+}
+
+.popular-text,
+.categories-text {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #f7f7f7;
+  margin-bottom: 5px;
+}
+
+.popular-text:last-child,
+.categories-text:last-child {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.instagram .sidebar-contents {
   display: flex;
   flex-wrap: wrap;
 }
 
-.main-content1 {
-  width: 300px;
-  background-color: #eeeeee;
-  margin-right: 30px;
-}
-
-.mini-box1 {
-position: absolute;
-width: 60px;
-height: 40px;
-background-color: #ff9a4b;
-}
-
-.mini-box1-text {
-  text-align: center;
-  line-height: 0px;
-  color: white;
-}
-
-.box1 {
-  background-image: url(img/flow01.png);
-  width: 280px;
-  height: 150px;
-  margin: 10px;
+.instagram-box {
+  width: 110px;
+  padding-top: 110px;
   background-size: cover;
   background-position: center;
+  margin-bottom: 10px;
 }
 
-.box-title1 {
-  margin-top: 15px;
+.instagram-box:nth-child(odd) {
+  margin: 0 10px 10px 0;
 }
 
-.box-text1 {
-  margin-top: 5px;
+.instagram-box:nth-child(1) {
+  background-image: url(img/airport.jpg);
 }
 
-.main-content2 {
-  width: 300px;
-  background-color: #eeeeee;
-  margin-right: 30px;
-}
-.mini-box2 {
-position: absolute;
-width: 60px;
-height: 40px;
-background-color: #ff9a4b;
+.instagram-box:nth-child(2) {
+  background-image: url(img/japan.jpg);
 }
 
-.mini-box2-text {
-  text-align: center;
-  line-height: 0px;
-  color: white;
+.instagram-box:nth-child(3) {
+  background-image: url(img/snow.jpg);
 }
 
-.box2 {
-  background-image: url(img/flow02.png);
-  width: 280px;
-  height: 150px;
-  margin: 10px;
-  background-size: cover;
-  background-position: center;
+.instagram-box:nth-child(4) {
+  background-image: url(img/japan2.jpg);
 }
 
-.box-title2 {
-  margin-top: 15px;
+.instagram-box:nth-child(5) {
+  background-image: url(img/lake.jpg);
 }
 
-.box-text2 {
-  margin-top: 5px;
+.instagram-box:nth-child(6) {
+  background-image: url(img/road.jpg);
 }
 
-.main-content3 {
-  width: 300px;
-  background-color: #eeeeee;
-}
-.mini-box3 {
-position: absolute;
-width: 60px;
-height: 40px;
-background-color: #ff9a4b;
-}
+ footer {
+   width: 100%;
+   height: 120px;
+   text-align: center;
+   line-height: 120px;
+   background-color: #848282;
+ }
 
-.mini-box3-text {
-  text-align: center;
-  line-height: 0px;
-  color: white;
-}
+ .footer-text {
+   color: #fff;
+ }
 
-.box3 {
-  background-image: url(img/flow03.png);
-  width: 280px;
-  height: 150px;
-  margin: 10px;
-  background-size: cover;
-  background-position: center;
-}
+ @media screen and (max-width: 425px) {
+  header {
+    width: 100%;
+  }
 
-.box-title3 {
-  margin-top: 15px;
-}
+  .nav-list {
+    width: 100%;
+  }
 
-.box-text3 {
-  margin-top: 5px;
-}
+  .nav-list-item {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
 
-.food {
-  background-color: #aaaaaa;
-  width: 100%;
-  height: 50px;
-  margin-top: 50px;
-}
+  .social {
+    display: none;
+  }
 
-@media screen and (max-width: 768px) {
-  .main {
+  .main-visual-content {
+    width: 100%;
+  }
+
+  main {
     width: 100%;
     display: block;
-}
-
-  .main-content1 {
-    width: 90%;
-    margin: 0 auto;
   }
 
-  .box1 {
-    width: 93.3%;
+  .blog {
+    width: 100%;
+    margin: 0;
   }
 
-    .main-content2 {
-    width: 90%;
-    margin: 0 auto;
+  .blog-box {
+    padding-left: 2%;
+    padding-right: 2%;
   }
 
-  .box2 {
-    width: 93.3%;
+  .blog-image {
+    width: 49%;
   }
 
-    .main-content3 {
-    width: 90%;
-    margin: 0 auto;
+  .blog-text {
+    width: 49%;
+    padding-top: 5px;
   }
 
-  .box3 {
-    width: 93.3%;
+  .sidebar {
+    width: 100%;
+  }
+
+  .sidebar-contents {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .instagram-box {
+    width: 48%;
+    padding-top: 48%;
+  }
+
+  .instagram-box:nth-child(odd) {
+    margin-right: 4%;
+  }
+
+  .pagination {
+    margin-bottom: 50px;
   }
 }
